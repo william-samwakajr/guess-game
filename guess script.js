@@ -1,13 +1,14 @@
-function compare() {
-    var Uinput = document.getElementById('data').value;
-    const loseH = "too high";
-    const loseL = "too low";
-    const win = "you win";
-    if (Uinput < 5) {
-        document.getElementById('result').innerText = 'too low';
-    } else if (Uinput > 5) {
-        document.getElementById('result').innerText = 'too high';
-    } else if (Uinput = 5) {
-        document.getElementById('result').innerText = 'winner';
+let press = document.querySelector('#button');
+let Uinput = document.querySelector('#data').value;
+let endQoute = document.querySelector('#result');
+let winningNumber = 5;
+
+press.addEventListener('click', function() {
+    if (Uinput < winningNumber) {
+        endQoute.innerText = 'TOO LOW';
+    } else if (Uinput > winningNumber) {
+        endQoute.innerText = 'TOO HIGH';
+    } else if (Uinput = winningNumber) {
+        endQoute.innerText = 'YOU WINN!!'
     }
-}
+})

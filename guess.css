@@ -19,7 +19,10 @@ h1 {
 
 input {
     height: 70px;
+    width: 170px;
     margin-left: 150px;
+    font-size: larger;
+    text-align: center;
 }
 
 button {
@@ -40,4 +43,8 @@ button {
     margin-left: 165px;
     background-color: white;
     text-align: center;
+}
+
+#result {
+    padding-top: 20px;
 }
