@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guesing game</title>
+    <link rel="stylesheet" href="guess.css">
+    <script type="text/javascript">
+        function compare() {
+            var Uinput = document.getElementById('data').value;
+
+            if (Uinput < 5) {
+                document.getElementById('result').innerText = 'too low';
+            } else if (Uinput > 5) {
+                document.getElementById('result').innerText = 'too high';
+            } else if (Uinput = 5) {
+                document.getElementById('result').innerText = 'winner';
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            background-color: whitesmoke;
+        }
+        
+        .container {
+            width: 500px;
+            margin: auto;
+            margin-top: 150px;
+            border-radius: 20px;
+            height: 650px;
+            background-color: #1d5dec;
+        }
+        
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            border-bottom: dashed whitesmoke 1px;
+        }
+        
+        input {
+            height: 70px;
+            width: 170px;
+            margin-left: 150px;
+            font-size: larger;
+            text-align: center;
+        }
+        
+        button {
+            margin-top: 50px;
+            margin-left: 200px;
+            height: 75px;
+            width: 75px;
+        }
+        
+        .btn h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        .winBox {
+            height: 70px;
+            width: 150px;
+            margin-left: 165px;
+            background-color: white;
+            text-align: center;
+        }
+        
+        #result {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+            <h1> GUESS THE NUMBER </h1>
+            <input type="number" name=" " step="any" id="data" />
+        </div>
+        <div class="btn">
+            <button onclick="compare()"><h2>GO</h2></button>
+        </div>
+        <div class="winBox">
+            <h2 id="result">
+            </h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

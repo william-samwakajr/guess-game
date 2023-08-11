@@ -1,0 +1,43 @@
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 20px;
+    height: 650px;
+    background-color: #1d5dec;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: dashed whitesmoke 1px;
+}
+
+input {
+    height: 70px;
+    margin-left: 150px;
+}
+
+button {
+    margin-top: 50px;
+    margin-left: 200px;
+    height: 75px;
+    width: 75px;
+}
+
+.btn h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.winBox {
+    height: 70px;
+    width: 150px;
+    margin-left: 165px;
+    background-color: white;
+    text-align: center;
+}
